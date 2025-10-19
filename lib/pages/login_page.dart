@@ -74,15 +74,15 @@ class LoginPage extends StatelessWidget {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: FaIcon(FontAwesomeIcons.facebook, size: 32),
+                  icon: FaIcon(FontAwesomeIcons.facebook, size: 33),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: FaIcon(FontAwesomeIcons.instagram, size: 32),
+                  icon: FaIcon(FontAwesomeIcons.instagram, size: 33),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: FaIcon(FontAwesomeIcons.google, size: 32),
+                  icon: FaIcon(FontAwesomeIcons.google, size: 33),
                 ),
               ],
             ),
