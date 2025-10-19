@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -64,20 +65,37 @@ class LoginPage extends StatelessWidget {
               spacing: 8,
               mainAxisSize: MainAxisSize.max,
               children: [
-                Expanded(child: Divider()), 
-                Text("Sign up with"), 
+                Expanded(child: Divider()),
+                Text("Sign up with"),
                 Expanded(child: Divider()),
               ],
             ),
-            Text("Icons here"),
-            SizedBox(height: 36,),
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: FaIcon(FontAwesomeIcons.facebook, size: 32),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: FaIcon(FontAwesomeIcons.instagram, size: 32),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: FaIcon(FontAwesomeIcons.google, size: 32),
+                ),
+              ],
+            ),
+            SizedBox(height: 36),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Don't have an account? "),
-                GestureDetector(child: Text("Sign up", style: TextStyle(color: Colors.blue),))
+                GestureDetector(
+                  child: Text("Sign up", style: TextStyle(color: Colors.blue)),
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
